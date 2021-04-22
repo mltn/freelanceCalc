@@ -13,15 +13,54 @@
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(11, auto);
       }
+      label.income { grid-area: 1 / 1 / 2 / 3; }
+      input.income { grid-area: 1 / 2 / 2 / 4; }
+      
+      label.threshold { grid-area: 2 / 1 / 3 / 3; }
+      span.threshold { grid-area: 2 / 2 / 3 / 4; }
+      label.cost-estimate { grid-area: 3 / 1 / 4 / 3; }
+      span.cost-estimate { grid-area: 3 / 2 / 4 / 4; }
+      label.taxable { grid-area: 4 / 1 / 5 / 3; }
+      span.taxable { grid-area: 4 / 2 / 5 / 4; }
+      
+      label.not-employed { grid-area: 5 / 3 / 6 / 4; }
+      label.employed { grid-area: 5 / 4 / 3 / 5; }
+      
+      label.pension-fund { grid-area: 6 / 1 / 7 / 2; }
+      span.pension-fund { grid-area: 6 / 2 / 7 / 3; }
+      span.pension-fund-not-employed { grid-area: 6 / 3 / 7 / 4; }
+      span.pension-fund-employed { grid-area: 6 / 4 / 7 / 5; }
+      
+      label.ealthcare-fund { grid-area: 7 / 1 / 8 / 2; }
+      span.ealthcare-fund { grid-area: 7 / 2 / 8 / 3; }
+      span.ealthcare-fund-not-employed { grid-area: 7 / 3 / 8 / 4; }
+      span.ealthcare-fund-employed { grid-area: 7 / 4 / 8 / 5; }
+      
+      label.tax { grid-area: 8 / 1 / 9 / 2; }
+      span.tax { grid-area: 8 / 2 / 9 / 3; }
+      span.tax-not-employed { grid-area: 8 / 3 / 9 / 4; }
+      span.tax-employed { grid-area: 8 / 4 / 9 / 5; }
+      
+      label.total { grid-area: 9 / 1 / 10 / 3; }
+      span.total-not-employed { grid-area: 9 / 3 / 10 / 4; }
+      span.total-employed { grid-area: 9 / 4 / 10 / 5; }
+      
+      label.percentage { grid-area: 10 / 1 / 11 / 3; }
+      span.percentage-not-employed { grid-area: 10 / 31 / 11 / 4; }
+      span.percentage-employed { grid-area: 10 / 4 / 11 / 5; }
+      
     </style>
   </head>
   <body>
     <label class="income">Mesečni iznos</label>
     <input id="income" class="income" type="text" value="100.000,00"/>
     
-    <label class="threshold">Besteretni iznos</label><span class="threshold">32.000,00</span>
-    <label class="cost-estimate">Normirani trošak</label><span class="cost-estimate">50%</span>
-    <label class="tax-basis">Osnovica</label><span class="tax-basis">18.000,00</span>
+    <label class="threshold">Besteretni iznos</label>
+    <span class="threshold">32.000,00</span>
+    <label class="cost-estimate">Normirani trošak</label>
+    <span class="cost-estimate">50%</span>
+    <label class="taxable">Osnovica</label>
+    <span class="taxable">18.000,00</span>
     
     <label class="pension-fund">PIO</label>
     <span class="pension-fund">25,50%</span>
