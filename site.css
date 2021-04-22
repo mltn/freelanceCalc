@@ -8,16 +8,51 @@ html, body {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(11, auto);
+	font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
   }
   body > * {
-	  padding: 3px 5px;
+	  padding: 1px 7px;
+      width: 100%;
+	  justify-self: stretch;
   }
   span, input {
 	  text-align: center;
   }
+  label.total, span.total-not-employed, span.total-employed,
+  label.percentage, span.percentage-not-employed, span.percentage-employed  {
+	  font-weight: bold;
+  }
+  span.total-not-employed, span.total-employed,
+  span.percentage-not-employed, span.percentage-employed {
+	background-color: #f5f5f5;
+	border: 2px solid black;
+    max-width: 100%;
+    width: 100%;
+  }
+  span.percentage-not-employed, span.percentage-employed {
+	border-top: 0;
+  }
+  label.employed, span.pension-fund-employed,
+  span.healthcare-fund-employed, span.tax-employed {
+	  border-left: 2px solid black;
+  }
+  
+  input {
+    box-shadow: inset 0 .0625em .125em rgba(10,10,10,.05);
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+  }
   
   label.employed, label.not-employed {
-	  padding-top: 10px;
+	  padding-top: 7px;
+	  padding-bottom: 5px;
+  }
+  .taxable {
+	  padding-bottom: 5px;
   }
   span.tax-not-employed, span.tax-employed {
 	  padding-bottom: 20px;
