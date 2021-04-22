@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(11, auto);
+      }
+    </style>
+  </head>
+  <body>
+    <label class="income">Mesečni iznos</label>
+    <input id="income" class="income" type="text" value="100.000,00"/>
+    
+    <label class="threshold">Besteretni iznos</label><span class="threshold">32.000,00</span>
+    <label class="cost-estimate">Normirani trošak</label><span class="cost-estimate">50%</span>
+    <label class="tax-basis">Osnovica</label><span class="tax-basis">18.000,00</span>
+    
+    <label class="pension-fund">PIO</label>
+    <span class="pension-fund">25,50%</span>
+    <label class="healthcare-fund">Zdrav</label>
+    <span class="healthcare-fund">10,30%</span>
+    <label class="tax">Porez</label>
+    <span class="tax">20%</span>
+    
+    <label class="not-employed">Van radnog odnosa</label>
+    <label class="employed">U radnom odnosu</label>
+    <span class="pension-fund-not-employed">4.590,00</span>
+    <span class="pension-fund-employed">4.590,00</span>
+    <span class="healthcare-fund-not-employed">1.854,00</span>
+    <span class="healthcare-fund-employed">0,00</span>
+    <span class="tax-not-employed">3.600,00</span>
+    <span class="tax-employed">3.600,00</span>
+    
+    <label class="total">Ukupno</label>
+    <span class="total-not-employed">10.044,00</span>
+    <span class="total-employed">8.190.00</span>
+    
+    <label class="percentage">%</label>
+    <span class="percentage-not-employed">10,04%</span>
+    <span class="percentage-employed">8.19%</span>
+  </body>
+</html>
