@@ -78,8 +78,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		totalNotEmployedElement.innerText = formatDecimal(calcTotalForNotEmployed(taxableIncome));
 		totalEmployedElement.innerText = formatDecimal(calcTotalForEmployed(taxableIncome));
 		
-		percentageNotEmployedElement.innerText = '%' + formatDecimal(calcPercentageForNotEmployed(income));
-		percentageEmployedElement.innerText = '%' + formatDecimal(calcPercentageForEmployed(income));
+		percentageNotEmployedElement.innerText = formatDecimal(calcPercentageForNotEmployed(income)) + '%';
+		percentageEmployedElement.innerText = formatDecimal(calcPercentageForEmployed(income)) + '%';
 	};
 	const updateState = event => {
 		calcAndRender();

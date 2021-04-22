@@ -16,6 +16,14 @@ html, body {
 	  text-align: center;
   }
   
+  label.employed, label.not-employed {
+	  padding-top: 10px;
+  }
+  span.tax-not-employed, span.tax-employed {
+	  padding-bottom: 20px;
+  }
+  
+  
   label.income { grid-area: 1 / 1 / 2 / 3; }
   input.income { grid-area: 1 / 3 / 2 / 5; }
   
