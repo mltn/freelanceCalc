@@ -20,7 +20,7 @@ const formatDecimal = (num) => {
 };
 const threshold = 32000
 const costEstimatePercentage = 0.5;
-const pensionFundContributionPercentage = 0.255;
+const pensionFundContributionPercentage = 0.25;
 const healthcareFundContributionPercentage = 0.103;
 const taxPercentage = 0.2;
 const calcTaxable = income => {
